@@ -1,0 +1,100 @@
+@media all and (max-width: 600px) {
+	#test1 {
+		display: none;
+	}
+}
+
+#test2 {
+	background-image: url('/img/test2.jpeg');
+	width: 1200px;
+	height: 500px;
+}
+
+@media all and (max-width: 600px) {
+	#test2 {
+		display: none;
+	}
+}
+
+#test3 div {
+	background-image: url('/img/test3.jpeg');
+	width: 1200px;
+	height: 500px;
+}
+
+@media all and (max-width: 600px) {
+	#test3 {
+		display: none;
+	}
+}
+
+#test4 {
+	background-image: url('/img/test4-desktop.jpeg');
+	width: 1200px;
+	height: 500px;
+}
+
+@media all and (max-width: 600px) {
+	#test4 {
+		background-image: url('/img/test4-mobile.jpeg');
+		background-position: center center;
+		background-size: cover;
+		width: 250px;
+		height: 250px;
+	}
+}
+
+/* Desktop */
+@media all and (min-width: 601px) {
+	#test5 {
+		background-image: url('/img/test5-desktop.jpeg');
+		width: 1200px;
+		height: 500px;
+	}
+}
+
+/* Mobile */
+@media all and (max-width: 600px) {
+	#test5 {
+		background-image: url('/img/test5-mobile.jpeg');
+		background-position: center center;
+		background-size: cover;
+		width: 250px;
+		height: 250px;
+	}
+}
+
+#test6 {
+	background-image:url('/img/test6.jpeg');
+	width: 250px;
+	height: 250px;
+	background-position: center center;
+	background-size: cover;
+}
+
+@media all and (max-device-width: 600px) {
+	#test6 {
+		display:none;
+	}
+}
+
+#test7 {
+	background-image:url('/img/test7-low.jpeg');
+	background-position: center center;
+	background-size: cover;
+	width:200px;
+	height:75px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+	#test7 {
+		background-image:url('/img/test7-hightres.jpeg');
+		background-position: center center;
+		background-size: cover;
+		width:200px;
+		height:75px;
+	}
+}
